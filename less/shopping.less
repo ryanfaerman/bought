@@ -1,0 +1,46 @@
+@linkColor:             #08c;
+@linkColorHover:        darken(@linkColor, 15);
+
+// Grays
+@black:                 #000;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #eee;
+@white:                 #fff;
+
+// Accent colors
+@blue:                  #049CDB;
+@blueDark:              #0064CD;
+@green:                 #46a546;
+@red:                   #9d261d;
+@yellow:                #ffc40d;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+
+@cream: 								rgb(230, 230, 230);
+
+
+#sidebar {
+	background: @orange;
+
+}
+
+#primary {
+	background: @blue;
+}
+
+#sidebar, #primary {
+	// Tablet (Landscape)
+	height: 768px;
+	// Tablet (Portrait)
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		height: 1024px;
+	}
+
+	// Mobile (Portrait)
+	@media only screen and (max-width: 767px) {
+		height: auto;
+	}
+}
